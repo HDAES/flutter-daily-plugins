@@ -52,7 +52,7 @@ class _DemoPageState extends State<DemoPage> {
                 setState(() => _requests++);
                 await Future<void>.delayed(const Duration(seconds: 2));
                 if (_simulateError) throw StateError('模拟网络失败');
-                if (!mounted) return;
+                if (!context.mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text('提交完成')),
                 );

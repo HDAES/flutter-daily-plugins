@@ -74,6 +74,43 @@ void main() {
         isNotNull);
   });
 
+  testWidgets('recovers and can be retried after a synchronous error', (
+    tester,
+  ) async {
+    var calls = 0;
+    Object? caught;
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: GuardedAsyncButton(
+            label: '提交',
+            onPressed: () {
+              calls++;
+              if (calls == 1) throw StateError('synchronous failure');
+              return Future<void>.value();
+            },
+            onError: (error, _) => caught = error,
+          ),
+        ),
+      ),
+    );
+
+    await tester.tap(find.text('提交'));
+    await tester.pump();
+
+    expect(caught, isA<StateError>());
+    expect(find.text('提交'), findsOneWidget);
+    expect(tester.widget<ElevatedButton>(find.byType(ElevatedButton)).onPressed,
+        isNotNull);
+
+    await tester.tap(find.text('提交'));
+    await tester.pump();
+
+    expect(calls, 2);
+    expect(find.text('提交'), findsOneWidget);
+  });
+
   testWidgets('does not run when disabled', (tester) async {
     var calls = 0;
     await tester.pumpWidget(
