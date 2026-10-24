@@ -1,0 +1,17 @@
+name: guarded_async_button_example
+description: Demo for guarded_async_button.
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  guarded_async_button:
+    path: ../
+
+flutter:
+  uses-material-design: true
