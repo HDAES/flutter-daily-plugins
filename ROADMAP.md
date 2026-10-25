@@ -2,7 +2,7 @@
 
 > GitHub: https://github.com/HDAES/flutter-daily-plugins  
 > 目标：每天一个小而完整的 Flutter Widget、Dart 工具包或原生能力适配器，并同步生成真实测试报告与 X 原创素材包。  
-> Day 001 已提交；Day 002–100 为规划选题，未经开发/测试不标记完成。
+> Day 001–002 源码已提交；Day 003–100 为规划选题。提交不代表已经完成设备验证。
 
 ## 项目原则
 
@@ -25,7 +25,7 @@
 | Day | 项目 / 包名 | 解决的问题 | 类型 | 难度 | 状态 |
 |---|---|---|---|---|---|
 | 001 | **Guarded Async Button** · `guarded_async_button` | 异步期间锁定提交按钮，防重复点击 | Widget | ★ | ✅ 已提交 |
-| 002 | **OTP Cooldown Button** · `otp_cooldown_button` | 验证码按钮倒计时与重发恢复 | Widget | ★ | ⬜ 计划中 |
+| 002 | **OTP Cooldown Button** · `otp_cooldown_button` | 验证码按钮倒计时与重发恢复 | Widget | ★ | 📦 已提交（待本地验证） |
 | 003 | **Debounced Search Field** · `debounced_search_field` | 输入防抖、清除与搜索回调 | Widget | ★ | ⬜ 计划中 |
 | 004 | **Password Strength Meter** · `password_strength_meter` | 密码强度规则、提示与进度条 | Widget | ★★ | ⬜ 计划中 |
 | 005 | **Masked Input Field** · `masked_input_field` | 电话/卡号等输入掩码与光标处理 | Widget | ★★ | ⬜ 计划中 |
