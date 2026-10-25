@@ -1,0 +1,16 @@
+name: otp_cooldown_button
+description: A small Flutter OTP resend button with async safety and a configurable cooldown.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
