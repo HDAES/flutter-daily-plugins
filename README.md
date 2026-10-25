@@ -49,3 +49,9 @@ flutter-daily-plugins/
 ## License
 
 MIT — see [LICENSE](LICENSE). Code and examples are AI-assisted and should be reviewed and tested before production use.
+
+## Daily auto-generation via GitHub Actions
+
+[Automation setup guide](docs/AUTOMATION.md) · [Daily workflow](.github/workflows/daily-flutter-plugin.yml)
+
+Runs at approximately **09:17 Beijing time**. Generated packages are validated by Flutter CI before being committed to `main`. **Requires your own `OPENAI_API_KEY` repository secret (separately billed from ChatGPT).** Without the secret, generation will fail safely and nothing will be published. Manual workflow dispatch defaults to validation-only.
