@@ -50,8 +50,10 @@ flutter-daily-plugins/
 
 MIT — see [LICENSE](LICENSE). Code and examples are AI-assisted and should be reviewed and tested before production use.
 
-## Daily auto-generation via GitHub Actions
+## Daily publishing
 
-[Automation setup guide](docs/AUTOMATION.md) · [Daily workflow](.github/workflows/daily-flutter-plugin.yml)
+The daily Flutter coding plan runs in ChatGPT (around 09:00 Beijing time), not GitHub Actions. The scheduled task is instructed to generate a package, attempt to push it through the connected GitHub integration, and verify the commit.
 
-Runs at approximately **09:17 Beijing time**. Generated packages are validated by Flutter CI before being committed to `main`. **Requires your own `OPENAI_API_KEY` repository secret (separately billed from ChatGPT).** Without the secret, generation will fail safely and nothing will be published. Manual workflow dispatch defaults to validation-only.
+GitHub access during unattended scheduled runs has not yet been verified. Check the daily report for the actual commit URL or a clear upload-failure notice.
+
+Run `flutter analyze`, `flutter test`, and the example app on your own machine before claiming validation or posting real screenshots on X. Unverified packages must be labeled accordingly.
