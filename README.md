@@ -9,6 +9,7 @@ One lightweight, practical Flutter plugin or widget a day, with example apps, te
 | Day | Package | What it does | Status |
 | --- | --- | --- | --- |
 | 001 | [Guarded Async Button](day-001-guarded-async-button/) | Prevent repeated button taps while an async task is in progress | Source published; local verification pending |
+| 002 | [OTP Cooldown Button](day-002-otp-cooldown-button/) | Prevent repeated OTP requests; countdown starts after a successful async send | Source published; local verification pending |
 
 ## Quick start
 
@@ -31,7 +32,13 @@ The Day 001 project is a pure Flutter widget package, not a platform-channel plu
 flutter-daily-plugins/
 ├── README.md
 ├── LICENSE
-└── day-001-guarded-async-button/
+├── day-001-guarded-async-button/
+│   ├── lib/
+│   ├── test/
+│   ├── example/
+│   ├── docs/x_publish_kit.md
+│   └── README.md
+└── day-002-otp-cooldown-button/
     ├── lib/
     ├── test/
     ├── example/
