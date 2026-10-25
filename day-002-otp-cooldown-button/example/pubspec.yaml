@@ -1,0 +1,17 @@
+name: otp_cooldown_button_example
+description: Demonstration app for otp_cooldown_button.
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  otp_cooldown_button:
+    path: ../
+
+flutter:
+  uses-material-design: true
