@@ -10,6 +10,7 @@ One lightweight, practical Flutter plugin or widget a day, with example apps, te
 | --- | --- | --- | --- |
 | 001 | [Guarded Async Button](day-001-guarded-async-button/) | Prevent repeated button taps while an async task is in progress | Source published; local verification pending |
 | 002 | [OTP Cooldown Button](day-002-otp-cooldown-button/) | Prevent repeated OTP requests; countdown starts after a successful async send | Source published; local verification pending |
+| 003 | [Debounced Search Field](day-003-debounced-search-field/) | Debounced input, immediate clear/submit, and search callbacks | Source published; local verification pending |
 
 ## Quick start
 
@@ -38,7 +39,13 @@ flutter-daily-plugins/
 │   ├── example/
 │   ├── docs/x_publish_kit.md
 │   └── README.md
-└── day-002-otp-cooldown-button/
+├── day-002-otp-cooldown-button/
+│   ├── lib/
+│   ├── test/
+│   ├── example/
+│   ├── docs/x_publish_kit.md
+│   └── README.md
+└── day-003-debounced-search-field/
     ├── lib/
     ├── test/
     ├── example/
@@ -54,6 +61,6 @@ MIT — see [LICENSE](LICENSE). Code and examples are AI-assisted and should be 
 
 The daily Flutter coding plan runs in ChatGPT (around 09:00 Beijing time), not GitHub Actions. The scheduled task is instructed to generate a package, attempt to push it through the connected GitHub integration, and verify the commit.
 
-GitHub access during unattended scheduled runs has not yet been verified. Check the daily report for the actual commit URL or a clear upload-failure notice.
+Direct GitHub publishing was first verified by the Day 003 scheduled task on 2026-10-26. Future runs can still fail; check the daily report for the actual commit URL or a clear upload-failure notice.
 
 Run `flutter analyze`, `flutter test`, and the example app on your own machine before claiming validation or posting real screenshots on X. Unverified packages must be labeled accordingly.

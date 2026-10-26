@@ -1,0 +1,14 @@
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+coverage/
+.idea/
+*.iml
+example/android/
+example/ios/
+example/web/
+example/linux/
+example/macos/
+example/windows/
