@@ -12,6 +12,7 @@ One lightweight, practical Flutter plugin or widget a day, with example apps, te
 | 002 | [OTP Cooldown Button](day-002-otp-cooldown-button/) | Prevent repeated OTP requests; countdown starts after a successful async send | Source published; local verification pending |
 | 003 | [Debounced Search Field](day-003-debounced-search-field/) | Debounced input, immediate clear/submit, and search callbacks | Source published; local verification pending |
 | 004 | [Password Strength Meter](day-004-password-strength-meter/) | Password rules, progress, and actionable feedback | Source published; local verification pending |
+| 005 | [Masked Input Field](day-005-masked-input-field/) | Phone/card masks, paste support, and caret-aware editing | Source published; local verification pending |
 
 ## Quick start
 
@@ -52,7 +53,13 @@ flutter-daily-plugins/
 │   ├── example/
 │   ├── docs/x_publish_kit.md
 │   └── README.md
-└── day-004-password-strength-meter/
+├── day-004-password-strength-meter/
+│   ├── lib/
+│   ├── test/
+│   ├── example/
+│   ├── docs/x_publish_kit.md
+│   └── README.md
+└── day-005-masked-input-field/
     ├── lib/
     ├── test/
     ├── example/
