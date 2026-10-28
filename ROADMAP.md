@@ -2,7 +2,7 @@
 
 > GitHub: https://github.com/HDAES/flutter-daily-plugins  
 > 目标：每天一个小而完整的 Flutter Widget、Dart 工具包或原生能力适配器，并同步生成真实测试报告与 X 原创素材包。  
-> Day 001–004 源码已提交；Day 005–100 为规划选题。提交不代表已经完成设备验证。
+> Day 001–005 源码已提交；Day 006–100 为规划选题。提交不代表已经完成设备验证。
 
 ## 项目原则
 
@@ -28,7 +28,7 @@
 | 002 | **OTP Cooldown Button** · `otp_cooldown_button` | 验证码按钮倒计时与重发恢复 | Widget | ★ | 📦 已提交（待本地验证） |
 | 003 | **Debounced Search Field** · `debounced_search_field` | 输入防抖、清除与搜索回调 | Widget | ★ | 📦 已提交（待本地验证） |
 | 004 | **Password Strength Meter** · `password_strength_meter` | 密码强度规则、提示与进度条 | Widget | ★★ | 📦 已提交（待本地验证） |
-| 005 | **Masked Input Field** · `masked_input_field` | 电话/卡号等输入掩码与光标处理 | Widget | ★★ | ⬜ 计划中 |
+| 005 | **Masked Input Field** · `masked_input_field` | 电话/卡号等输入掩码与光标处理 | Widget | ★★ | 📦 已提交（待本地验证） |
 | 006 | **Async Field Validator** · `async_field_validator` | 用户名异步校验、竞态取消 | Widget | ★★ | ⬜ 计划中 |
 | 007 | **Unsaved Form Guard** · `unsaved_form_guard` | 表单未保存离开提醒 | Widget | ★★ | ⬜ 计划中 |
 | 008 | **Multi-step Form Controller** · `multi_step_form_controller` | 多步骤表单切换与状态保留 | Widget | ★★ | ⬜ 计划中 |
